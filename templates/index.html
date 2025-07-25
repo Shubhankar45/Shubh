@@ -1,0 +1,404 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <div class="hero-content">
+                    <h1 class="hero-title">I'm <span class="text-gold">Shubhankar Patel</span></h1>
+                    <h2 class="hero-subtitle">Aspiring Data Scientist | Full-Stack Developer</h2>
+                    <p class="hero-description">Passionate Computer Science student with expertise in Python, Flask, and Data Science. Building innovative solutions and exploring the intersection of AI and web development.</p>
+                    <a href="#projects" class="btn btn-gold btn-lg mt-4 smooth-scroll">
+                        <i class="fas fa-code me-2"></i>View My Work
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1 text-center">
+                <div class="hero-image">
+                    <img src="{{ url_for('static', filename='img/profile1.png') }}" alt="Shubhankar Patel" class="profile-img rounded-bottom-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <p class="lead">Enthusiastic Computer Science undergraduate with a passion for technology and innovation.</p>
+                    <p>I specialize in Python development, Flask web applications, and Data Science. Currently pursuing my B.Tech in Computer Science Engineering at ITER, Bhubaneswar, I'm constantly exploring new technologies and building projects that solve real-world problems.</p>
+                    
+                    <div class="personal-info mt-4">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt text-gold"></i>
+                                    <span class="ms-2">Odisha, India</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-item">
+                                    <i class="fas fa-language text-gold"></i>
+                                    <span class="ms-2">English, Hindi, Odia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interests mt-3">
+                            <h6 class="text-gold">Interests:</h6>
+                            <div class="interest-tags">
+                                <span class="badge bg-dark border border-gold me-2 mb-2">Artificial Intelligence</span>
+                                <span class="badge bg-dark border border-gold me-2 mb-2">Tech Projects</span>
+                                <span class="badge bg-dark border border-gold me-2 mb-2">Open Source</span>
+                                <span class="badge bg-dark border border-gold me-2 mb-2">Building Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="skills-section">
+                    <h5 class="text-gold mb-4">Technical Skills</h5>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Flask</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Data Science</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Web Development</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section-padding bg-dark-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <h5>AI-Powered Budget Planner</h5>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <p class="project-description">Intelligent budget planning application that uses machine learning to predict expenses and provide personalized financial recommendations.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline-gold btn-sm">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="#" class="btn btn-gold btn-sm ms-2">
+                            <i class="fas fa-external-link-alt me-1"></i>Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-satellite-dish project-icon"></i>
+                        <h5>Real-Time Tracking System</h5>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                    <p class="project-description">Real-time location tracking and monitoring system with live updates using WebSocket connections and interactive maps.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline-gold btn-sm">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="#" class="btn btn-gold btn-sm ms-2">
+                            <i class="fas fa-external-link-alt me-1"></i>Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-chart-bar project-icon"></i>
+                        <h5>FIFA Dataset Analysis</h5>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">BeautifulSoup</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <p class="project-description">Comprehensive analysis of FIFA player statistics with data scraping, cleaning, and visualization to uncover insights about player performance.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline-gold btn-sm">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="#" class="btn btn-gold btn-sm ms-2">
+                            <i class="fas fa-external-link-alt me-1"></i>Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Resume</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="resume-content">
+                    <p class="lead">Passionate Computer Science student with strong foundations in Data Science, Machine Learning, and Full-Stack Development.</p>
+                    <p>Seeking opportunities to apply my technical skills in Python, Flask, and data analytics to contribute to innovative projects and grow as a professional developer.</p>
+                    
+                    <a href="{{ url_for('download_resume') }}" class="btn btn-gold btn-lg mt-4">
+                        <i class="fas fa-download me-2"></i>Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="section-padding bg-dark-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h5>Microsoft Certified Data Scientist</h5>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-year">2020</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h5>Data Science Training</h5>
+                        <p class="cert-issuer">Devtown</p>
+                        <p class="cert-year">2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h5>AWS Academy Cloud Foundation</h5>
+                        <p class="cert-issuer">AWS Academy</p>
+                        <p class="cert-year">2023</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h5>Web Development Bootcamp</h5>
+                        <p class="cert-issuer">Udemy</p>
+                        <p class="cert-year">2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h5>Bachelor of Technology - Computer Science Engineering</h5>
+                            <p class="institution">ITER, Bhubaneswar</p>
+                            <p class="duration">2021 - 2025</p>
+                            <p class="description">Currently pursuing B.Tech in CSE with focus on Data Science, Machine Learning, and Software Development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h5>Higher Secondary Education (CHSE)</h5>
+                            <p class="institution">Vedic Higher Secondary School</p>
+                            <p class="duration">2019 - 2021</p>
+                            <p class="description">Completed higher secondary education with focus on Science stream.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="education-content">
+                            <h5>Board of Secondary Education (BSE)</h5>
+                            <p class="institution">Govt. High School, Raidihi</p>
+                            <p class="duration">2019</p>
+                            <p class="description">Completed secondary education with strong foundation in mathematics and science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding bg-dark-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form-container">
+                    <p class="text-center mb-4">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
+                    
+                    <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-gold btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="footer-text">© 2025 Shubhankar Patel. Built with <i class="fas fa-heart text-gold"></i> using Flask & Bootstrap.</p>
+                <div class="social-links mt-3">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:contact@shubhankarpatel.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
